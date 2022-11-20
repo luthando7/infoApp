@@ -1,0 +1,7 @@
+{
+  "name": "infoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
