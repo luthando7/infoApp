@@ -1,5 +1,21 @@
 <ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>News</ion-title>
+    </ion-toolbar>
+  </ion-header>
   <ion-content class="ion-padding">
+    <ion-list *ngFor="let value of data">
+      <ion-card>
+        <!-- <img alt="contentImage" src="{{value.image.thumbnail.contentUrl}}"> -->
+        <ion-card-header>
+          <ion-card-title>{{value.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{value.description}}
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
     <ion-button [routerLink]="['/home']">Home</ion-button>
   </ion-content>
 </ion-app>
